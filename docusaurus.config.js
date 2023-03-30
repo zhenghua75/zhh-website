@@ -7,8 +7,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '郑华的个人网站',
+  // 网站标语
   tagline: 'Zheng Hua\' Personal Website',
-  favicon: 'img/zhenghua.ico',
+  // favicon: 'img/zhenghua.ico',
 
   // Set the production url of your site here
   url: 'https://zhenghua75.github.io',
@@ -37,19 +38,21 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+        //docs: {
+          // sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/zhenghua75/zhh-website/blob/main/',
-        },
+          // editUrl: 'https://github.com/zhenghua75/zhh-website/blob/main/',
+        //},
         blog: {
-          showReadingTime: true,
+          // showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/zhenghua75/zhh-website/blob/main/',
+          // editUrl: 'https://github.com/zhenghua75/zhh-website/blob/main/',
+          blogSidebarCount: 10, //'ALL',
+          //blogSidebarTitle: '最新帖子',
+          // routeBasePath: '/',
+          blogTitle: '郑华的网络日志',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -76,69 +79,75 @@ const config = {
           //   position: 'left',
           //   label: '文集一',
           // },
-          {to: '/blog', label: '网络日志', position: 'left'},
-          // {
-          //   href: 'https://github.com/zhenghua75/zhh-website',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog/archive', label: 'Archive', position: 'left'},
+          {
+            href: 'https://github.com/zhenghua75/zhh-website',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
-        // style: 'dark',
+         style: 'dark',
         links: [
-          // {
-          //   title: '文集',
-          //   items: [
-          //     {
-          //       label: '文集一',
-          //       to: '/docs/intro',
-          //     },
-          //     {
-          //       label: '日志',
-          //       to: '/blog',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: '社区',
-          //   items: [
-          //     {
-          //       label:'微博',
-          //       href:'https://weibo.com/zhenghua9409',
-          //     },
-          //     {
-          //       label:'知乎',
-          //       href:'https://zhihu.com/people/zhenghua75'
-          //     },
-          //     {
-          //       label: '今日头条',
-          //       href: 'https://www.toutiao.com/c/user/token/MS4wLjABAAAAKtMZdX08NzQat09Zqqu1VC75O1R_tIizkQCz5EM3uQQ',
-          //     },
+          {
+            //title: 'Blog',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
               
-          //   ],
-          // },
-          // {
-          //   title:'更多',
-          //   items:[
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/zhenghua75/zhh-website',
-          //     },
-          //     {
-          //       label:'Twitter',
-          //       href:'https://twitter.com/zhenghua75'
-          //     },
-          //     {
-          //       label:'Facebook',
-          //       href:'https://www.facebook.com/zhenghua75'
-          //     },
-          //     {
-          //       label:'Youtube',
-          //       href:'https://www.youtube.com/zhenghua75'
-          //     }
-          //   ],
-          // },
+            ],
+          },
+          {
+            items: [
+              {
+                label: 'Archive',
+                to: '/blog/archive',
+              },
+            ],
+          },
+          {
+            //title: '社区',
+            items: [
+              // {
+              //   label:'微博',
+              //   href:'https://weibo.com/zhenghua9409',
+              // },
+              // {
+              //   label:'知乎',
+              //   href:'https://zhihu.com/people/zhenghua75'
+              // },
+              // {
+              //   label: '今日头条',
+              //   href: 'https://www.toutiao.com/c/user/token/MS4wLjABAAAAKtMZdX08NzQat09Zqqu1VC75O1R_tIizkQCz5EM3uQQ',
+              // },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/zhenghua75/zhh-website',
+              },
+            ],
+          },
+          //{
+            //title:'更多',
+            //items:[
+              
+              // {
+              //   label:'Twitter',
+              //   href:'https://twitter.com/zhenghua75'
+              // },
+              // {
+              //   label:'Facebook',
+              //   href:'https://www.facebook.com/zhenghua75'
+              // },
+              // {
+              //   label:'Youtube',
+              //   href:'https://www.youtube.com/zhenghua75'
+              // }
+            //],
+          //},
         ],
         copyright: `Copyright © ${new Date().getFullYear()} 郑华的个人网站. Built with Docusaurus.`,
       },

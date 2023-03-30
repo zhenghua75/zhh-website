@@ -3,10 +3,12 @@ slug: welcome
 title: Welcome
 authors: [slorber, yangshun]
 tags: [facebook, hello, docusaurus]
+draft: true
+image: ./docusaurus-plushie-banner.jpeg
 ---
 
 [Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
-
+<!--truncate-->
 Simply add Markdown files (or folders) to the `blog` directory.
 
 Regular blog authors can be added to `authors.yml`.

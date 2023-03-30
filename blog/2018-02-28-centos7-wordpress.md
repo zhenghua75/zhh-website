@@ -1,8 +1,7 @@
 ---
-slug: centos7-wordpress
 title: centos7 wordpress
-authors: zhenghua
 date: 2018-02-28 21:57:47
+authors: zhenghua
 tags: [centos7,wordpress]
 ---
 
@@ -14,7 +13,7 @@ tags: [centos7,wordpress]
 [root@VM_0_14_centos ~]# yum install php php-mysql -y 
 [root@VM_0_14_centos ~]# yum install mariadb-server -y
 ```
-<!-- more -->
+<!--truncate-->
 ```shell
 [root@VM_0_14_centos ~]# systemctl start httpd
 [root@VM_0_14_centos ~]# systemctl enable httpd
