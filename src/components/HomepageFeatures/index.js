@@ -4,13 +4,13 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    imgUrl: require('@site/static/img/WechatIMG11203.jpeg').default,
+    //imgUrl: require('@site/static/img/WechatIMG11203.jpeg').default,
   },
   {
     imgUrl: require('@site/static/img/WechatIMG11203.jpeg').default,
   },
   {
-    imgUrl: require('@site/static/img/WechatIMG11203.jpeg').default,
+    //imgUrl: require('@site/static/img/WechatIMG11203.jpeg').default,
   },
   // {
   //   title: 'Easy to Use',
